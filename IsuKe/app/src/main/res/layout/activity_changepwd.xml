@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/org_word"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen01" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dpDimen20"
+            android:layout_height="@dimen/dpDimen48">
+
+            <RelativeLayout
+                android:id="@+id/title_back"
+                android:layout_width="@dimen/dpDimen80"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    style="@style/commom_back_image"
+                    android:background="@mipmap/ic_back" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/title_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/baise"
+                android:textSize="@dimen/spDimen16" />
+
+            <TextView
+                android:id="@+id/title_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dpDimen15" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/isuke_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48"
+                android:layout_marginTop="@dimen/dpDimen1"
+                android:background="@color/baise"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/old_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:background="@null"
+                    android:hint="@string/old_pwd"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColorHint="@color/danhui"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dpDimen10"
+                    android:background="@color/huise" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48"
+                android:background="@color/baise"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/new_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:background="@null"
+                    android:hint="@string/new_pwd"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColorHint="@color/danhui"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dpDimen10"
+                    android:background="@color/huise" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48"
+                android:background="@color/baise"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/new_pwd_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:background="@null"
+                    android:hint="@string/new_pwd_again"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColorHint="@color/danhui"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen01"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dpDimen10"
+                    android:background="@color/huise" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/change_pwd"
+                style="@style/orgcolor_btnstyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dpDimen30"
+                android:text="@string/commit" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--shape自身属性设定基本形状（shape：rectangle、oval、line、ring）-->
+<!--子标签基本属性（corners、gradient、padding、size、solid、stroke）-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/colorPrimaryDark" />
+    <size android:height="@dimen/dpDimen20" android:width="@dimen/dpDimen20"></size>
+    <corners android:radius="1dip" />
+
+</shape>

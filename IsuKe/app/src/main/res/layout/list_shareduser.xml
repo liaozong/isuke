@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dpDimen58">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/shareduserAvatar"
+        android:layout_width="@dimen/dpDimen48"
+        android:layout_height="@dimen/dpDimen48"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dpDimen15"
+        android:src="@mipmap/default_avatar" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dpDimen5"
+        android:layout_marginTop="@dimen/dpDimen10"
+        android:layout_toRightOf="@+id/shareduserAvatar"
+        android:text="啦啦啦啦~~" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="@dimen/dpDimen5"
+        android:layout_toRightOf="@+id/shareduserAvatar"
+        android:text="15919738009" />
+</RelativeLayout>

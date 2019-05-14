@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/baise"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen48">
+
+            <RelativeLayout
+                android:id="@+id/title_back"
+                android:layout_width="@dimen/dpDimen80"
+                android:layout_height="match_parent">
+
+                <ImageView style="@style/commom_back_image" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/title_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/spDimen16" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="@dimen/dpDimen120"
+                android:layout_height="@dimen/dpDimen120"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dpDimen50"
+                android:src="@mipmap/ic_sukelogo01" />
+
+
+            <RelativeLayout
+                android:id="@+id/area_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48"
+                android:layout_below="@+id/phone_icon"
+                android:layout_marginLeft="@dimen/dpDimen15"
+                android:layout_marginRight="@dimen/dpDimen15"
+                android:layout_marginTop="@dimen/dpDimen50">
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dpDimen5"
+                    android:text="中国" />
+
+                <TextView
+                    android:id="@+id/area_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dpDimen5"
+                    android:text="+86" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/danhui" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen48"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dpDimen20"
+            android:layout_marginRight="@dimen/dpDimen20"
+            android:layout_marginTop="@dimen/dpDimen15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/login_phonenum"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColorHint="@color/danhui"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/danhui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/next_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/next"
+                style="@style/login_button"
+                android:layout_marginLeft="@dimen/dpDimen60"
+                android:layout_marginRight="@dimen/dpDimen60"
+                android:layout_marginTop="@dimen/dpDimen60"
+                android:text="@string/next_step" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

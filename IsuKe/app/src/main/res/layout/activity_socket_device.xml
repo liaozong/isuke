@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_topbg03"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen01" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48"
+                android:layout_marginTop="@dimen/dpDimen20">
+
+                <RelativeLayout
+                    android:id="@+id/title_back"
+                    android:layout_width="@dimen/dpDimen80"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        style="@style/commom_back_image"
+                        android:background="@mipmap/ic_back" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/title_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/spDimen16" />
+
+                <ImageView
+                    android:id="@+id/title_icon"
+                    style="@style/titleicon"
+                    android:src="@mipmap/ic_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen160"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mainstate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/smartpower_start"
+                            android:textColor="@color/baise"
+                            android:textSize="@dimen/spDimen20" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dpDimen15"
+                            android:text="@string/onestep_control"
+                            android:textColor="@color/baise" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/mainswitch"
+                        android:layout_width="@dimen/dpDimen120"
+                        android:layout_height="@dimen/dpDimen120"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/ic_turnonturnoff1" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/isuke_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/socket_background"
+                    android:layout_width="@dimen/dpDimen100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dpDimen20"
+                    android:background="@mipmap/ic_socketbg"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/socket_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dpDimen10"
+                    android:layout_marginRight="@dimen/dpDimen10"
+                    android:layout_marginTop="@dimen/dpDimen30" />
+            </RelativeLayout>
+
+            <!--  <RelativeLayout
+                  android:id="@+id/socket_one"
+                  android:layout_width="@dimen/dpDimen180"
+                  android:layout_height="@dimen/dpDimen60"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="@dimen/dpDimen20"
+                  android:layout_marginTop="@dimen/dpDimen50"
+                  android:background="@color/baise">
+
+                  <View
+                      android:layout_width="@dimen/dpDimen1"
+                      android:layout_height="match_parent"
+                      android:background="@color/org_login_word" />
+
+                  <View
+                      android:id="@+id/socket1_name_edit"
+                      android:layout_width="@dimen/dpDimen25"
+                      android:layout_height="@dimen/dpDimen25"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="@dimen/dpDimen10"
+                      android:layout_marginTop="@dimen/dpDimen10"
+                      android:background="@mipmap/ic_edit" />
+
+                  <TextView
+                      android:id="@+id/socket1_name"
+                      android:layout_width="@dimen/dpDimen100"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/dpDimen10"
+                      android:layout_marginTop="@dimen/dpDimen10"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:text="插座1"
+                      android:textSize="@dimen/spDimen14"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/socket1_state"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/socket1_name"
+                      android:layout_marginLeft="@dimen/dpDimen10"
+                      android:text="已关闭"
+                      android:textColor="@color/huise"
+                      android:textSize="@dimen/spDimen11" />
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:id="@+id/socket_two"
+                  android:layout_width="@dimen/dpDimen180"
+                  android:layout_height="@dimen/dpDimen60"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@+id/socket_one"
+                  android:layout_marginRight="@dimen/dpDimen20"
+                  android:layout_marginTop="@dimen/dpDimen20"
+                  android:background="@color/baise">
+
+                  <View
+                      android:layout_width="@dimen/dpDimen1"
+                      android:layout_height="match_parent"
+                      android:background="@color/org_login_word" />
+
+                  <View
+                      android:id="@+id/socket2_name_edit"
+                      android:layout_width="@dimen/dpDimen25"
+                      android:layout_height="@dimen/dpDimen25"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="@dimen/dpDimen10"
+                      android:layout_marginTop="@dimen/dpDimen10"
+                      android:background="@mipmap/ic_edit" />
+
+                  <TextView
+                      android:id="@+id/socket2_name"
+                      android:layout_width="@dimen/dpDimen100"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/dpDimen10"
+                      android:layout_marginTop="@dimen/dpDimen10"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:text="插座2"
+                      android:textSize="@dimen/spDimen14"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/socket2_state"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/socket2_name"
+                      android:layout_marginLeft="@dimen/dpDimen10"
+                      android:text="已关闭"
+                      android:textColor="@color/huise"
+                      android:textSize="@dimen/spDimen11" />
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:id="@+id/socket_three"
+                  android:layout_width="@dimen/dpDimen180"
+                  android:layout_height="@dimen/dpDimen60"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@+id/socket_two"
+                  android:layout_marginRight="@dimen/dpDimen20"
+                  android:layout_marginTop="@dimen/dpDimen20"
+                  android:background="@color/baise">
+
+                  <View
+                      android:layout_width="@dimen/dpDimen1"
+                      android:layout_height="match_parent"
+                      android:background="@color/org_login_word" />
+
+                  <View
+                      android:id="@+id/socket3_name_edit"
+                      android:layout_width="@dimen/dpDimen25"
+                      android:layout_height="@dimen/dpDimen25"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="@dimen/dpDimen10"
+                      android:layout_marginTop="@dimen/dpDimen10"
+                      android:background="@mipmap/ic_edit" />
+
+                  <TextView
+                      android:id="@+id/socket3_name"
+                      android:layout_width="@dimen/dpDimen100"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/dpDimen10"
+                      android:layout_marginTop="@dimen/dpDimen10"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:text="插座3"
+                      android:textSize="@dimen/spDimen14"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/socket3_state"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/socket3_name"
+                      android:layout_marginLeft="@dimen/dpDimen10"
+                      android:text="已关闭"
+                      android:textColor="@color/huise"
+                      android:textSize="@dimen/spDimen11" />
+              </RelativeLayout>-->
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

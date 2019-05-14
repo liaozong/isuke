@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_01background">
+
+        <ImageView
+            android:id="@+id/start_icon"
+            android:layout_width="@dimen/dpDimen120"
+            android:layout_height="@dimen/dpDimen120"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dpDimen100"
+            android:src="@mipmap/ic_sukelogo01" />
+
+        <Button
+            android:id="@+id/regist"
+            style="@style/orgcolor_btnstyle"
+            android:layout_below="@+id/start_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dpDimen120"
+            android:text="@string/regist_acount" />
+
+        <Button
+            android:id="@+id/start_login"
+            android:layout_width="@dimen/dpDimen210"
+            android:layout_height="@dimen/dpDimen48"
+            android:layout_below="@+id/regist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dpDimen20"
+            android:background="@drawable/startship_selector_btn"
+            android:text="@string/login_login"
+            android:textColor="@color/org_word" />
+    </RelativeLayout>
+</layout>

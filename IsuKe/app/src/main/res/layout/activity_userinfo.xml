@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="user" type="com.example.liao.isuke.bean.UserInfo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/org_word"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen48"
+            android:background="@color/org_word">
+
+
+            <RelativeLayout
+                android:id="@+id/title_back"
+                android:layout_width="@dimen/dpDimen80"
+                android:layout_height="match_parent">
+                <ImageView style="@style/commom_back_image"
+                    android:background="@mipmap/ic_back"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/title_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/spDimen16" />
+
+            <TextView
+                android:id="@+id/title_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dpDimen16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/isuke_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/LL_UserInfo">
+
+                    <TextView
+                        style="@style/TV_UserInfoTip"
+                        android:text="头像"
+                        />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@mipmap/default_avatar"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px">
+
+                </View>
+                <LinearLayout
+                    android:id="@+id/ll_userame"
+                    style="@style/LL_UserInfo">
+
+                    <TextView
+                        style="@style/TV_UserInfoTip"
+                        android:text="名字"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spDimen15"
+                        android:text="@{user.nickname}"
+                        />
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dpDimen18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_arrow"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px">
+
+                </View>
+                <LinearLayout
+                    android:id="@+id/ll_phonenumber"
+                    style="@style/LL_UserInfo">
+
+                    <TextView
+                        android:text="手机号码"
+                        style="@style/TV_UserInfoTip" />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spDimen15"
+                        android:text="@{user.phone}"
+                        />
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dpDimen18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_arrow"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

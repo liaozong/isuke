@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liao.isuke">
+
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_isukeloge02"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_isukeloge02"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="com.google.android.maps" />
+
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" -->
+        <activity android:name=".activity.login.StartAty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.main.AddDeviceTypeAty" />
+        <activity android:name=".activity.main.AddDeviceAty" />
+        <activity android:name=".activity.main.SocketDeviceAty" />
+        <activity android:name=".activity.main.DeviceOperateAty" />
+        <activity android:name=".activity.main.SocketRemarkAty" />
+        <activity android:name=".activity.main.SharedUserAty" />
+        <activity android:name=".activity.main.AddSharedUserAty" />
+        <activity android:name=".activity.main.SharedAty" />
+        <activity android:name=".activity.main.TimedOnAty" />
+        <activity android:name=".activity.main.DeviceWifiAty" />
+        <activity android:name=".activity.main.AddTimedOnAty" />
+        <activity android:name=".activity.main.PowerDetailAty" />
+        <activity
+            android:name=".activity.scene.AddSceneAty"
+            android:theme="@style/DefaultCityPickerTheme" />
+        <activity
+            android:name=".activity.scene.HomeSceneAty"
+            android:theme="@style/DefaultCityPickerTheme" />
+        <activity android:name=".activity.main.RepeatAty" />
+        <activity android:name=".activity.main.PowerDissipationAty" />
+        <activity android:name=".activity.login.LoginAty" />
+        <activity android:name=".activity.login.ForgetPwdAty" />
+        <activity android:name=".activity.login.PhoneAty" />
+        <activity android:name=".activity.login.VerifyCodeAty" />
+        <activity android:name=".activity.login.VerifyCodeLoginAty" />
+        <activity android:name=".activity.mine.SettingAty" />
+        <activity android:name=".activity.mine.ChangePwdAty" />
+        <activity android:name=".activity.mine.HelpAty" />
+        <activity android:name=".activity.mine.MessageAty" />
+        <activity android:name=".activity.mine.AboutUsAty" />
+        <activity android:name=".activity.mine.UserInfoAty" />
+        <activity android:name=".activity.mine.AdviceAty" />
+        <activity android:name=".activity.mine.SetNickNameAty" />
+        <activity android:name=".activity.mine.MessageDetailAty" />
+    </application>
+
+</manifest>

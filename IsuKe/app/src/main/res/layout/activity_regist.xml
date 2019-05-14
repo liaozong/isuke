@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_regist_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="@dimen/dpDimen100">
+
+
+            <EditText
+                android:id="@+id/regist_edit_phonenum"
+                style="@style/LoginEdit"
+                android:layout_centerVertical="true"
+                android:hint="@string/login_phonenum"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/regist_edit_phonenum"
+                android:layout_marginTop="10dp"
+                android:background="@color/danhui" />
+
+            <TextView
+                android:id="@+id/get_verify"
+                style="@style/LoginEdit"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:text="@string/login_get_verify"
+                android:textColor="@color/org_login_word" />
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/get_verify"
+                android:background="@color/danhui" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_regist_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+
+            <EditText
+                android:id="@+id/regist_edit_verify"
+                style="@style/LoginEdit"
+                android:layout_centerVertical="true"
+                android:hint="@string/login_verify"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/regist_edit_verify"
+                android:layout_marginTop="10dp"
+                android:background="@color/danhui" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_regist_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+
+            <EditText
+                android:id="@+id/regist_edit_pwd"
+                style="@style/LoginEdit"
+                android:layout_centerVertical="true"
+                android:hint="@string/login_passwd"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/regist_edit_pwd"
+                android:layout_marginTop="10dp"
+                android:background="@color/danhui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_regist_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/regist_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/login_selector_btn"
+                android:gravity="center"
+                android:text="@string/login_new_username"
+                android:textColor="@color/baise"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

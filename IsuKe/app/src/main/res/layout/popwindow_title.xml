@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dpDimen38">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dpDimen15"
+        android:text="@string/cancle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dpDimen15"
+        android:text="@string/ok"
+        android:textColor="@color/org_login_word" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpDimen01"
+        android:layout_alignParentBottom="true"
+        android:background="@color/huise" />
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpDimen80"
+        android:layout_marginLeft="@dimen/dpDimen30"
+      >
+
+        <ImageView
+            android:id="@+id/socket"
+            android:layout_width="@dimen/dpDimen60"
+            android:layout_height="@dimen/dpDimen60"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_3normal_random" />
+
+        <RelativeLayout
+            android:id="@+id/socket_one"
+            android:layout_width="@dimen/dpDimen180"
+            android:layout_height="@dimen/dpDimen60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dpDimen20"
+            android:background="@color/baise">
+
+            <View
+                android:layout_width="@dimen/dpDimen1"
+                android:layout_height="match_parent"
+                android:background="@color/org_login_word" />
+
+            <ImageView
+                android:id="@+id/socket_name_edit"
+                android:layout_width="@dimen/dpDimen25"
+                android:layout_height="@dimen/dpDimen25"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dpDimen10"
+                android:layout_marginTop="@dimen/dpDimen10"
+                android:background="@mipmap/ic_edit" />
+
+            <TextView
+                android:id="@+id/socket_name"
+                android:layout_width="@dimen/dpDimen100"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dpDimen10"
+                android:layout_marginTop="@dimen/dpDimen10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="插座1"
+                android:textSize="@dimen/spDimen14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/socket_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/socket_name"
+                android:layout_marginLeft="@dimen/dpDimen10"
+                android:text="已关闭"
+                android:textColor="@color/huise"
+                android:textSize="@dimen/spDimen11" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

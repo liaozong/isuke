@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpDimen30" />
+
+    <TextView
+        android:id="@+id/zi_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dpDimen15"
+       />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpDimen30" />
+</RelativeLayout>

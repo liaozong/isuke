@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/org_word"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen01" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen48"
+            android:layout_marginTop="@dimen/dpDimen20">
+
+            <RelativeLayout
+                android:id="@+id/title_back"
+                android:layout_width="@dimen/dpDimen80"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    style="@style/commom_back_image"
+                    android:background="@mipmap/ic_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/baise"
+                android:textSize="@dimen/spDimen16" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen30"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dpDimen30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dpDimen120"
+                    android:text="03/02/2018" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dpDimen30"
+                    android:text="14:00" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dpDimen30"
+                android:layout_marginRight="@dimen/dpDimen30"
+                android:layout_marginTop="@dimen/dpDimen20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textSize="@dimen/spDimen16"
+                    android:text="新手请登录www.iSuke.com领取300元专属礼包，可用于ISuKe只能设备的购买。新手请登录www.iSuke.com领取300元专属礼包，可用于ISuKe只能设备的购买。设备的购买新手请登录www.iSuke.com领取300元专属礼包，可用于ISuKe只能设备的购买。设备的购买新手请登录www.iSuke.com领取300元专属礼包，可用于ISuKe设备的购买只能设备的购买。"
+                    android:textColor="@android:color/black" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

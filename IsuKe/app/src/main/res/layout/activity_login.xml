@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="click"
+            type="com.example.liao.isuke.click.LoginClick" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen200">
+
+            <ImageView
+                style="@style/image_appicon"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/area_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen48"
+            android:layout_below="@+id/phone_icon"
+            android:layout_marginLeft="@dimen/dpDimen15"
+            android:layout_marginRight="@dimen/dpDimen15"
+           >
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dpDimen5"
+                android:text="中国" />
+
+            <TextView
+                android:id="@+id/area_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dpDimen5"
+                android:text="+86" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/danhui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen30"
+            android:layout_marginLeft="@dimen/dpDimen20"
+            android:layout_marginRight="@dimen/dpDimen20"
+            android:layout_marginTop="@dimen/dpDimen20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/login_phonenum"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColorHint="@color/danhui"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/danhui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen30"
+            android:layout_below="@+id/layout_user"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dpDimen20"
+            android:layout_marginRight="@dimen/dpDimen20"
+            android:layout_marginTop="@dimen/dpDimen20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/login_passwd"
+                    android:inputType="textPassword"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/danhui"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/danhui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_pwd"
+            android:layout_marginLeft="@dimen/dpDimen20"
+            android:layout_marginRight="@dimen/dpDimen20"
+            android:layout_marginTop="@dimen/dpDimen40">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48"
+                android:background="@drawable/login_selector_btn"
+                android:gravity="center"
+                android:text="@string/login_login"
+                android:textColor="@color/baise"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/loginregist"
+                android:layout_width="@dimen/dpDimen100"
+                android:layout_height="@dimen/dpDimen40"
+                android:layout_below="@+id/login"
+                android:layout_marginTop="@dimen/dpDimen10"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/verifycode_login"
+                android:textColor="@color/danhui" />
+
+            <TextView
+                android:id="@+id/forgetpwd"
+                android:layout_width="@dimen/dpDimen100"
+                android:layout_height="@dimen/dpDimen40"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/login"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dpDimen15"
+                android:clickable="true"
+                android:text="@string/isforget_pwd"
+                android:textColor="@color/org_word" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/login_linear_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_noaccounttips"
+                android:textColor="@color/danhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_regist"
+                android:textColor="@color/ibreezee_blueword" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

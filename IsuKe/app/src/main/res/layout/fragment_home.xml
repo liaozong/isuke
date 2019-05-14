@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen180"
+            android:layout_marginTop="@dimen/dpDimen20"
+            android:background="@mipmap/ic_topbg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48">
+
+                <TextView
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:clickable="true"
+                    android:text="@string/edit"
+                    android:textColor="@color/baise" />
+
+                <TextView
+                    android:id="@+id/title_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/spDimen16" />
+
+                <ImageView
+                    android:id="@+id/title_icon"
+                    style="@style/titleicon" />
+
+                <TextView
+                    android:id="@+id/title_delete"
+                    style="@style/titleright"
+                    android:text="删除"
+                    android:textColor="@color/baise" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen80">
+
+                <Button
+                    android:id="@+id/word_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen58"
+                    android:layout_marginLeft="@dimen/dpDimen20"
+                    android:layout_marginRight="@dimen/dpDimen20"
+                    android:layout_marginTop="@dimen/dpDimen20"
+                    android:background="@mipmap/ic_saysth" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/isuke_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/my"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dpDimen15"
+                            android:layout_marginTop="@dimen/dpDimen15"
+                            android:text="@string/mydevice" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/home_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dpDimen10"
+                            android:layout_marginRight="@dimen/dpDimen10"
+                            android:layout_marginTop="@dimen/dpDimen5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shared"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dpDimen15"
+                            android:layout_marginTop="@dimen/dpDimen15"
+                            android:text="@string/shareddevice" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/shared_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dpDimen10"
+                            android:layout_marginRight="@dimen/dpDimen10"
+                            android:layout_marginTop="@dimen/dpDimen5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/startlife_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen260"
+                    android:background="@color/baise">
+
+                    <TextView
+                        android:id="@+id/start_life"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dpDimen15"
+                        android:text="@string/add_device_forlife" />
+
+                    <ImageView
+                        android:id="@+id/nothing"
+                        android:layout_width="@dimen/dpDimen150"
+                        android:layout_height="@dimen/dpDimen120"
+                        android:layout_below="@+id/start_life"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ic_nothing" />
+
+                    <ImageView
+                        android:id="@+id/add_device"
+                        android:layout_width="@dimen/dpDimen60"
+                        android:layout_height="@dimen/dpDimen60"
+                        android:layout_below="@+id/nothing"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dpDimen15"
+                        android:src="@mipmap/ic_addequipment1" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</layout>

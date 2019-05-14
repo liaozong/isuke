@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dpDimen48"
+    android:background="@color/baise"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+           android:src="@mipmap/ic_01equipment_click"
+            />
+
+        <TextView
+            android:id="@+id/tv_home_word"
+            android:layout_width="wrap_content"
+            android:textColor="@color/org_login_word"
+            android:layout_height="wrap_content"
+            android:text="@string/device_center"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/money"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/iv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@mipmap/ic_02mode"
+           />
+
+        <TextView
+            android:id="@+id/tv_money_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scene_mode"
+           />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/iv_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@mipmap/ic_03user"
+           />
+
+        <TextView
+            android:id="@+id/tv_mine_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person_center"
+             />
+    </LinearLayout>
+
+</LinearLayout>

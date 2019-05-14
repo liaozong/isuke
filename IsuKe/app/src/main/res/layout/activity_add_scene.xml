@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/org_word"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen01" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen48"
+            android:layout_marginTop="@dimen/dpDimen20">
+
+            <RelativeLayout
+                android:id="@+id/title_back"
+                android:layout_width="@dimen/dpDimen80"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    style="@style/commom_back_image"
+                    android:background="@mipmap/ic_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/baise"
+                android:textSize="@dimen/spDimen16" />
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dpDimen15"
+                android:text="@string/save"
+                android:textColor="@color/baise" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/isuke_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48"
+                android:background="@color/baise">
+
+                <EditText
+                    android:layout_width="@dimen/dpDimen300"
+                    android:layout_height="@dimen/dpDimen48"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:background="@null"
+                    android:hint="@string/edit_scenename" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/choose_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48"
+                android:layout_marginTop="@dimen/dpDimen10"
+                android:background="@color/baise">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:text="@string/in_city"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/spDimen15" />
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dpDimen15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dpDimen15" />
+
+                <ImageView style="@style/MineIconArrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dpDimen10"
+                android:background="@color/baise"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dpDimen15"
+                        android:text="@string/triggering_condition" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dpDimen15"
+                        android:text="温度大于24度"
+                        android:textColor="@color/huise" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dpDimen01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dpDimen15"
+                        android:background="@color/huise" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/addscene_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dpDimen10"
+                    android:layout_marginRight="@dimen/dpDimen10"
+                    android:layout_marginTop="@dimen/dpDimen10" />
+                <!--    <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/dpDimen100"
+                           android:orientation="horizontal">
+
+                           <RelativeLayout
+                               android:layout_width="0dp"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1">
+
+                               <ImageView
+                                   android:id="@+id/wendu"
+                                   android:layout_width="@dimen/dpDimen35"
+                                   android:layout_height="@dimen/dpDimen35"
+                                   android:layout_centerInParent="true"
+                                   android:background="@mipmap/ic_temperature" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/wendu"
+                                   android:layout_centerHorizontal="true"
+                                   android:text="温度" />
+                           </RelativeLayout>
+
+                           <RelativeLayout
+                               android:id="@+id/humidity"
+                               android:layout_width="0dp"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1">
+
+                               <ImageView
+                                   android:id="@+id/shidu"
+                                   android:layout_width="@dimen/dpDimen35"
+                                   android:layout_height="@dimen/dpDimen35"
+                                   android:layout_centerInParent="true"
+                                   android:background="@mipmap/ic_humidiity" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/shidu"
+                                   android:layout_centerHorizontal="true"
+                                   android:text="湿度" />
+                           </RelativeLayout>
+
+                           <RelativeLayout
+                               android:id="@+id/air"
+                               android:layout_width="0dp"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1">
+
+                               <ImageView
+                                   android:id="@+id/kongqi"
+                                   android:layout_width="@dimen/dpDimen35"
+                                   android:layout_height="@dimen/dpDimen35"
+                                   android:layout_centerInParent="true"
+                                   android:background="@mipmap/ic_air" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/kongqi"
+                                   android:layout_centerHorizontal="true"
+                                   android:text="空气质量" />
+                           </RelativeLayout>
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/dpDimen100"
+                           android:orientation="horizontal">
+
+                           <RelativeLayout
+                               android:id="@+id/pmnum"
+                               android:layout_width="0dp"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1">
+
+                               <ImageView
+                                   android:id="@+id/pm"
+                                   android:layout_width="@dimen/dpDimen35"
+                                   android:layout_height="@dimen/dpDimen35"
+                                   android:layout_centerInParent="true"
+                                   android:background="@mipmap/ic_pm" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/pm"
+                                   android:layout_centerHorizontal="true"
+                                   android:text="PM2.5" />
+                           </RelativeLayout>
+
+                           <RelativeLayout
+                               android:layout_width="0dp"
+                               android:layout_height="match_parent"
+                               android:id="@+id/weather"
+                               android:layout_weight="1">
+
+                               <ImageView
+                                   android:id="@+id/tianqi"
+                                   android:layout_width="@dimen/dpDimen35"
+                                   android:layout_height="@dimen/dpDimen35"
+                                   android:layout_centerInParent="true"
+                                   android:background="@mipmap/ic_weather" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/tianqi"
+                                   android:layout_centerHorizontal="true"
+                                   android:text="天气" />
+                           </RelativeLayout>
+
+                           <RelativeLayout
+                               android:layout_width="0dp"
+                               android:layout_height="match_parent"
+                               android:id="@+id/sunset"
+                                   android:layout_weight="1">
+
+                               <ImageView
+                                   android:id="@+id/richu"
+                                   android:layout_width="@dimen/dpDimen35"
+                                   android:layout_height="@dimen/dpDimen35"
+                                   android:layout_centerInParent="true"
+                                   android:background="@mipmap/ic_sun" />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/richu"
+                                   android:layout_centerHorizontal="true"
+                                   android:text="日出日落" />
+                           </RelativeLayout>
+                       </LinearLayout>
+                   </LinearLayout>
+               -->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dpDimen10">
+
+                <RelativeLayout
+                    android:id="@+id/choose_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen48"
+                    android:background="@color/baise">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dpDimen15"
+                        android:text="@string/execute_task" />
+
+                    <ImageView style="@style/MineIconArrow" />
+
+                    <TextView
+                        android:id="@+id/state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dpDimen35"
+                        android:gravity="right"
+                        android:text="关闭设备"
+                        android:textColor="@color/huise" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

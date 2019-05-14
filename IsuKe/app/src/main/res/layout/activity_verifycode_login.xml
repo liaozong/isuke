@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen48">
+
+            <RelativeLayout
+                android:id="@+id/title_back"
+                android:layout_width="@dimen/dpDimen80"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    style="@style/commom_back_image" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/title_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/spDimen16" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                style="@style/image_appicon"
+                android:layout_marginTop="@dimen/dpDimen30" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48"
+                android:layout_below="@+id/phone_icon"
+                android:layout_marginLeft="@dimen/dpDimen20"
+                android:layout_marginRight="@dimen/dpDimen20"
+                android:layout_marginTop="@dimen/dpDimen50">
+
+
+                <EditText
+                    android:id="@+id/login_edit_phonenum"
+                    style="@style/LoginEdit"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/login_verify"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/danhui" />
+
+                <TextView
+                    android:id="@+id/get_verify"
+                    style="@style/LoginEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dpDimen10"
+                    android:layout_marginRight="@dimen/dpDimen10"
+                    android:clickable="true"
+                    android:text="@string/login_get_verify"
+                    android:textColor="@color/org_login_word" />
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="@dimen/dpDimen15"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/get_verify"
+                    android:background="@color/danhui" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/finish_login"
+                style="@style/login_button"
+                android:layout_marginLeft="@dimen/dpDimen60"
+                android:layout_marginRight="@dimen/dpDimen60"
+                android:layout_marginTop="@dimen/dpDimen60"
+                android:text="@string/login_login" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

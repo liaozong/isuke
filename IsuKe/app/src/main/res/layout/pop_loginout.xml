@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpDimen150"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dpDimen30"
+        android:layout_marginRight="@dimen/dpDimen30"
+        android:background="@drawable/popbackground_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_warning"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/spDimen17"
+            android:gravity="center"
+            android:text="是否退出?" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cp_color_gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="@dimen/dpDimen16"
+                android:gravity="center"
+                android:textColor="@color/org_login_word"
+                android:text="@string/ok" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

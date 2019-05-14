@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpDimen260"
+        android:background="@drawable/popbackground_shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpDimen48">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/warming"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cancle"
+                android:layout_width="@dimen/dpDimen25"
+                android:layout_height="@dimen/dpDimen25"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dpDimen15"
+                android:background="@mipmap/ic_off01" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dpDimen10"
+                android:layout_marginRight="@dimen/dpDimen10"
+                android:text="@string/is_delete"
+                />
+
+
+            <Button
+                android:id="@+id/commit_name"
+                style="@style/orgcolor_btnstyle"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dpDimen20"
+                android:text="@string/yes" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

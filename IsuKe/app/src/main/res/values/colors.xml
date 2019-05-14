@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/org_login_word</color>
+    <!--状态栏颜色-->
+    <color name="colorPrimaryDark">@color/org_login_word</color>
+    <!--控制各个控件被选中时的颜色-->
+    <color name="colorAccent">@color/org_word</color>
+
+    <color name="danhui">#c2c2c2</color>
+    <color name="baise">#ffffff</color>
+    <color name="ibreezee_blueword">#5BA8E2</color>
+    <color name="heise">#000000</color>
+    <color name="org_login_word">#FEA73F</color>
+
+    <color name="text_color_normal">#333333</color>
+    <color name="homeword_noclick">#a9a9a9</color>
+    <color name="huise">#cccccc</color>
+    <color name="lvxian">#93BF67</color>
+    <color name="caldroid_holo_blue_dark">#3190e8</color>
+    <color name="bantouming">#e0000000</color>
+    <color name="org_word">#ff8a00</color>
+    <color name="delete_color">#F95F5F</color>
+    <color name="isuke_background">#F0EFED</color>
+</resources>

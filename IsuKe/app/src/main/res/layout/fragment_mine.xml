@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="user" type="com.example.liao.isuke.bean.UserInfo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dpDimen20"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen48">
+
+                <TextView
+                    android:id="@+id/title_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/spDimen16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen80">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/settingAvatar"
+                    android:layout_width="@dimen/dpDimen60"
+                    android:layout_height="@dimen/dpDimen60"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:src="@mipmap/default_avatar" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dpDimen35"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:layout_marginTop="@dimen/dpDimen20"
+                    android:layout_toRightOf="@+id/settingAvatar"
+                    android:text="@{user.nickname}"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/spDimen16" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dpDimen20"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:layout_toRightOf="@+id/settingAvatar"
+                    android:text="@{user.phone}"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/spDimen12" />
+
+                <ImageView style="@style/MineIconArrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/isuke_background">
+
+            <LinearLayout style="@style/Linearlayout">
+
+                <RelativeLayout
+                    android:id="@+id/message"
+                    style="@style/Item48"
+                    android:layout_marginTop="@dimen/dpDimen10">
+
+                    <ImageView
+                        android:id="@+id/bankcard"
+                        style="@style/MineItemIcon"
+                        android:src="@mipmap/ic_information" /><!--android:src="@mipmap/ic_02bankcard" -->
+
+                    <TextView
+                        style="@style/MineItemWord"
+                        android:layout_toRightOf="@+id/bankcard"
+                        android:text="@string/message_center" />
+
+                    <ImageView style="@style/MineIconArrow" />
+                </RelativeLayout>
+
+                <View style="@style/MineItemLine" />
+
+
+                <RelativeLayout
+                    android:id="@+id/third"
+                    style="@style/Item48"
+                    android:layout_marginTop="@dimen/dpDimen10">
+
+                    <ImageView
+                        android:id="@+id/oilcard"
+                        style="@style/MineItemIcon"
+                        android:src="@mipmap/ic_link" /><!-- android:src="@mipmap/ic_02oilingcard"-->
+
+                    <TextView
+                        style="@style/MineItemWord"
+                        android:layout_toRightOf="@+id/oilcard"
+                        android:text="@string/third_offer" />
+
+                    <ImageView style="@style/MineIconArrow" />
+                </RelativeLayout>
+
+                <View style="@style/MineItemLine" />
+
+                <LinearLayout
+                    style="@style/Linearlayout"
+                    android:background="@color/baise">
+
+                    <RelativeLayout
+                        android:id="@+id/problem"
+                        style="@style/Item48">
+
+                        <ImageView
+                            android:id="@+id/moneycard"
+                            style="@style/MineItemIcon"
+                            android:src="@mipmap/ic_problem" /><!-- android:src="@mipmap/ic_02jdcard"-->
+
+                        <TextView
+                            style="@style/MineItemWord"
+                            android:layout_toRightOf="@+id/moneycard"
+                            android:text="@string/common_problem" />
+
+                        <ImageView style="@style/MineIconArrow" />
+                    </RelativeLayout>
+
+
+                    <View style="@style/MineItemLine" />
+
+                    <LinearLayout style="@style/Linearlayout_baise">
+
+                        <RelativeLayout
+                            android:id="@+id/idea"
+                            style="@style/Item48">
+
+                            <ImageView
+                                android:id="@+id/address"
+                                style="@style/MineItemIcon"
+                                android:src="@mipmap/ic_opinion" /><!-- android:src="@mipmap/ic_02address"-->
+
+                            <TextView
+                                style="@style/MineItemWord"
+                                android:layout_toRightOf="@+id/address"
+                                android:text="@string/idea_commit" />
+
+                            <ImageView style="@style/MineIconArrow" />
+                        </RelativeLayout>
+
+                        <View style="@style/MineItemLine" />
+
+                        <RelativeLayout
+                            android:id="@+id/about_us"
+                            style="@style/Item48">
+
+                            <ImageView
+                                android:id="@+id/bill"
+                                style="@style/MineItemIcon"
+                                android:src="@mipmap/ic_about" /><!-- android:src="@mipmap/ic_02invoice"-->
+
+                            <TextView
+                                style="@style/MineItemWord"
+
+                                android:layout_toRightOf="@+id/bill"
+                                android:text="@string/about_us" />
+
+                            <ImageView style="@style/MineIconArrow" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting"
+                    style="@style/Item48"
+                    android:layout_marginTop="@dimen/dpDimen10">
+
+                    <ImageView
+                        android:id="@+id/set"
+                        style="@style/MineItemIcon"
+                        android:src="@mipmap/ic_setting" /><!-- android:src="@mipmap/ic_02invoice"-->
+
+                    <TextView
+                        style="@style/MineItemWord"
+                        android:layout_toRightOf="@+id/set"
+                        android:text="@string/setting" />
+
+                    <ImageView style="@style/MineIconArrow" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

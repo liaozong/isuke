@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="@dimen/dpDimen80">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dpDimen10"
+        android:layout_marginLeft="@dimen/dpDimen20"
+        android:layout_marginRight="@dimen/dpDimen16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpDimen30"
+        android:layout_gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_point"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/dpDimen10"
+            android:layout_height="@dimen/dpDimen10"
+            android:background="@drawable/point_cicle"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/iv_point"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_title"
+            android:textColor="@android:color/black"
+            android:text="欢迎使用ISuKe智能家电产品，我们将竭诚为您服务！"
+            android:layout_marginLeft="@dimen/dpDimen10"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/dpDimen280"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_arrow"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/dpDimen25"
+            android:layout_height="@dimen/dpDimen25"
+            android:src="@mipmap/ic_arrow"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dpDimen20"
+        android:layout_marginRight="@dimen/dpDimen20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpDimen30"
+        android:layout_gravity="center_vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="14:00"
+            android:layout_marginLeft="@dimen/dpDimen20"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/dpDimen280"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dpDimen10"
+            android:text="03/02/2018"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</LinearLayout>
